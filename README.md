@@ -5,45 +5,32 @@ A web-based rural governance and civic engagement platform built with React and 
 ## Key Features & Dashboards
 
 * **Authentication (`Login.jsx`):** Role-based login interface for different user types.
-* **Citizen Dashboard (`CitizenDashboard.jsx`):** Portal for villagers/citizens to submit requests, track grievances, and view updates.
+* **Citizen Dashboard (`CitizenDashboard.jsx`):** Portal for citizens to submit requests, track grievances, and view updates.
 * **Gram Sabha Dashboard (`GramSabhaDashboard.jsx`):** Interface for managing village assembly meetings, resolutions, and community discussions.
-* **Official Dashboard (`OfficialDashboard.jsx`):** Administrative panel for government officials to review, verify, and act on citizen submissions.
+* **Official Dashboard (`OfficialDashboard.jsx`):** Administrative panel for officials to review, verify, and act on submissions.
 
-## Tech Stack
+## Project Structure
 
-* **Frontend:** React (JSX), CSS3
-* **Build Tool:** Vite
-* **Linting:** ESLint
+* `public/` — Static assets
+* `src/assets/` — Images and media files
+* `src/App.jsx` — Main application layout and routing
+* `src/Login.jsx` — Login screen
+* `src/CitizenDashboard.jsx` — Citizen portal
+* `src/GramSabhaDashboard.jsx` — Gram Sabha portal
+* `src/OfficialDashboard.jsx` — Official portal
+* `src/main.jsx` — Application entry point
+* `package.json` — Dependencies and scripts
+* `vite.config.js` — Vite configuration
 
-## Getting Started (For Team Members)
+## How to Run Locally (For Team Members)
 
-Follow these steps to run the project locally on your machine:
+GitHub only hosts the source code. To view the running app on your computer:
 
-1. **Clone the repository:**
+1. Clone or download this repository and open the `GramSetu` folder in VS Code.
+2. Open the terminal and install dependencies:
    ```bash
-   git clone <your-repo-url>
-   cd GramSetu
-
-**Install dependencies:**
    npm install
-
-**Start the development server:**
+3. Start the local development server:
+   ```bash
    npm run dev
-
-**Open in browser:**
-   Visit http://localhost:5173/ to view the application.
-
-**Project Structure**
-GramSetu/
-├── public/                 # Static assets
-├── src/
-│   ├── assets/             # Images and media files
-│   ├── App.jsx             # Main application routing/layout
-│   ├── Login.jsx           # Login screen
-│   ├── CitizenDashboard.jsx
-│   ├── GramSabhaDashboard.jsx
-│   ├── OfficialDashboard.jsx
-│   └── main.jsx            # Entry point
-├── index.html
-├── package.json
-└── vite.config.js
+4. Open the local URL shown in your terminal (usually port 5173) in your browser.
