@@ -1,16 +1,49 @@
-# React + Vite
+# GramSetu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based rural governance and civic engagement platform built with React and Vite, designed to connect citizens, Gram Sabha members, and local officials.
 
-Currently, two official plugins are available:
+## Key Features & Dashboards
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Authentication (`Login.jsx`):** Role-based login interface for different user types.
+* **Citizen Dashboard (`CitizenDashboard.jsx`):** Portal for villagers/citizens to submit requests, track grievances, and view updates.
+* **Gram Sabha Dashboard (`GramSabhaDashboard.jsx`):** Interface for managing village assembly meetings, resolutions, and community discussions.
+* **Official Dashboard (`OfficialDashboard.jsx`):** Administrative panel for government officials to review, verify, and act on citizen submissions.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Frontend:** React (JSX), CSS3
+* **Build Tool:** Vite
+* **Linting:** ESLint
 
-## Expanding the ESLint configuration
+## Getting Started (For Team Members)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Follow these steps to run the project locally on your machine:
+
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repo-url>
+   cd GramSetu
+
+**Install dependencies:**
+   npm install
+
+**Start the development server:**
+   npm run dev
+
+**Open in browser:**
+   Visit http://localhost:5173/ to view the application.
+
+**Project Structure**
+GramSetu/
+├── public/                 # Static assets
+├── src/
+│   ├── assets/             # Images and media files
+│   ├── App.jsx             # Main application routing/layout
+│   ├── Login.jsx           # Login screen
+│   ├── CitizenDashboard.jsx
+│   ├── GramSabhaDashboard.jsx
+│   ├── OfficialDashboard.jsx
+│   └── main.jsx            # Entry point
+├── index.html
+├── package.json
+└── vite.config.js
